@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme{
+    --color-primary:#5f6FFF;
+}
+
+@layer utilities {
+    /* Custom grid template columns rule */
+    .grid-cols-auto {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .hide-scrollbar {
+      overflow: scroll; /* Allow scrolling */
+      -ms-overflow-style: none; /* For Internet Explorer and Edge */
+      scrollbar-width: none; /* For Firefox */
+    }
+  
+    /* Hide scrollbar in Webkit-based browsers (Chrome, Safari, etc.) */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+.active hr{
+    @apply block
+}
